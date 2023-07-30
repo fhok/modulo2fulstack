@@ -10,7 +10,7 @@ async function auth(req, res, next) {
             error: 'Token não informado'
         });
 
-        const decodificar = verify(authorization, "secret");
+        const decodificar = verify(authorization, process.env.JWT_SECRET);
         req.userId = decodificar.id;
         next();
     } catch (error) {
