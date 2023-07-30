@@ -124,9 +124,13 @@ Inicie o servidor
 ```bash
   npm start
 ```
-Acesse a api em :
+**Acesse a api local**:
 ```bash
   http://localhost:NUMERO_DA_PORT_SERVER_AQUI/
+```
+**Acesse a api em produção** :
+```bash
+  https://modulo2.cyclic.app/
 ```
 
 
@@ -158,9 +162,13 @@ Para rodar esse projeto, você vai precisar adicionar as seguintes variáveis de
 - __Autenticação requerida__ : NÃO
 - __Método___:POST
 
-
+**Para acesso local**
 ```http
 /api/usuarios
+```
+**Para acesso em produção**
+```http
+https://modulo2.cyclic.app/api/usuarios
 ```
 ---
 
@@ -204,9 +212,10 @@ Para rodar esse projeto, você vai precisar adicionar as seguintes variáveis de
 }
 ```
 ---
+
 ## Screenshots
 
-![App Screenshot]('')
+![App Screenshot](https://raw.githubusercontent.com/fhok/modulo2fulstack/main/screenshot/screen.png)
 ---
 
 | Parâmetro   | Tipo       | Descrição                           |
@@ -228,9 +237,13 @@ Para rodar esse projeto, você vai precisar adicionar as seguintes variáveis de
 - __Autenticação requerida__ : NÃO
 - __Método___:POST
 
-
+**Para acesso Local**
 ```http
 /api/usuarios/login
+```
+**Para acesso em produção**
+```http
+https://modulo2.cyclic.app/api/usuarios/login
 ```
 ---
 
@@ -254,7 +267,11 @@ Para rodar esse projeto, você vai precisar adicionar as seguintes variáveis de
     "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0Ijox"
 }
 ```
+---
 
+## Screenshots
+
+![App Screenshot](https://raw.githubusercontent.com/fhok/modulo2fulstack/main/screenshot/login.png)
 ---
 
 | Parâmetro   | Tipo       | Descrição                           |
@@ -267,11 +284,20 @@ Para rodar esse projeto, você vai precisar adicionar as seguintes variáveis de
 ## **Atualizar dados usúario**
 
 - __Autenticação requerida__ :  Bearer {token}
+---
+
+## Screenshots
+
+![App Screenshot](https://raw.githubusercontent.com/fhok/modulo2fulstack/main/screenshot/autoriza%C3%A7%C3%A3o.png)
 - __Método___:PATCH
 
-
+**Para acesso Local**
 ```http
   /api/usuarios/:id
+```
+**Para acesso em produção**
+```http
+https://modulo2.cyclic.app/api/usuarios/:id
 ```
 ---
 
@@ -315,9 +341,13 @@ Para rodar esse projeto, você vai precisar adicionar as seguintes variáveis de
 - __Autenticação requerida__ :  Bearer {token}
 - __Método___:PATCH
 
-
+**Para acesso Local**
 ```http
 /api/usuarios/:id/status
+```
+**Para acesso em produção**
+```http
+https://modulo2.cyclic.app/api/usuarios/:id/status
 ```
 ---
 
@@ -356,9 +386,13 @@ Para rodar esse projeto, você vai precisar adicionar as seguintes variáveis de
 - __Autenticação requerida__ :  Bearer {token}
 - __Método___:PATCH
 
-
+**Para acesso local**
 ```http
-/api/usuarios/senha
+/api/usuarios/:id/senha
+```
+**Para acesso em produção**
+```http
+https://modulo2.cyclic.app/api/usuarios/:id/senha
 ```
 ---
 
@@ -398,9 +432,13 @@ vazio
 - __Autenticação requerida__ :  Bearer {token}
 - __Método___:GET
 
-
+**Para acesso Local**
 ```http
 /api/usuarios/:id
+```
+**Para acesso em produção**
+```http
+https://modulo2.cyclic.app/api/usuarios/:id
 ```
 ---
 
@@ -444,9 +482,13 @@ Vazio
 - __Autenticação requerida__ :  Bearer {token}
 - __Método___:POST
 
-
+**Para acesso Local**
 ```http
 /api/depositos
+```
+**Para acesso em produção**
+```http
+https://modulo2.cyclic.app/api/depositos
 ```
 ---
 
@@ -489,6 +531,11 @@ Vazio
     }
 }
 ```
+---
+
+## Screenshots
+
+![App Screenshot](https://raw.githubusercontent.com/fhok/modulo2fulstack/main/screenshot/cadastroDeposito.png)
 
 ---
 
@@ -517,9 +564,13 @@ Vazio
 - __Autenticação requerida__ :  Bearer {token}
 - __Método___:PATCH
 
-
+**Para acesso local**
 ```http
 /api/deposito/:id
+```
+**Para acesso em produção**
+```http
+https://modulo2.cyclic.app/api/depositos/:id
 ```
 ---
 
@@ -579,9 +630,13 @@ Vazio
 - __Autenticação requerida__ :  Bearer {token}
 - __Método___:PATCH
 
-
+**Para acesso Local**
 ```http
 /api/depositos/:id/status
+```
+**Para acesso em produção**
+```http
+https://modulo2.cyclic.app/api/depositos/:id/status
 ```
 ---
 
@@ -619,9 +674,13 @@ Vazio
 - __Autenticação requerida__ :  Bearer {token}
 - __Método___:PATCH
 
-
+**Para acesso local**
 ```http
 /api/depositos?status=Ativo
+```
+**Para acesso em produção**
+```http
+https://modulo2.cyclic.app/api/depositos?status=Ativo
 ```
 ---
 
@@ -680,9 +739,13 @@ vazio
 - __Autenticação requerida__ :  Bearer {token}
 - __Método___:GET
 
-
+**Para acesso local**
 ```http
 /api/depositos/:id
+```
+**Para acesso em produção**
+```http
+https://modulo2.cyclic.app/api/depositos/:id
 ```
 ---
 
@@ -730,9 +793,13 @@ Vazio
 - __Autenticação requerida__ :  Bearer {token}
 - __Método___:DELETE
 
-
+**Para acesso local**
 ```http
 /api/depositos/:id
+```
+**Para acesso em produção**
+```http
+https://modulo2.cyclic.app/api/depositos/:id
 ```
 ---
 
@@ -763,9 +830,13 @@ vazio
 - __Autenticação requerida__ :  Bearer {token}
 - __Método___:POST
 
-
+**Para acesso local**
 ```http
 /api/medicamentos
+```
+**Para acesso em produção**
+```http
+https://modulo2.cyclic.app/api/medicamentos
 ```
 ---
 
@@ -810,7 +881,11 @@ vazio
     }
 }
 ```
+---
 
+## Screenshots
+
+![App Screenshot](https://raw.githubusercontent.com/fhok/modulo2fulstack/main/screenshot/criarMedicamento.png)
 ---
 
 | Parâmetro   | Tipo       | Descrição                           |
@@ -831,9 +906,13 @@ vazio
 - __Autenticação requerida__ :  Bearer {token}
 - __Método___:PATCH
 
-
+**Para acesso local**
 ```http
 /api/medicamentos/:medicamentoId
+```
+**Para acesso em produção**
+```http
+https://modulo2.cyclic.app/api/medicamentos/:medicamentoId
 ```
 ---
 
@@ -884,9 +963,13 @@ vazio
 - __Autenticação requerida__ :  Bearer {token}
 - __Método___:GET
 
-
+**Para acesso local**
 ```http
 /api/medicamentos/:medicamentoId
+```
+**Para acesso em produção**
+```http
+https://modulo2.cyclic.app/api/medicamentos/:medicamentoId
 ```
 ---
 
@@ -925,9 +1008,13 @@ VAZIO
 - __Autenticação requerida__ :  Bearer {token}
 - __Método___:GET
 
-
+**Para acesso local**
 ```http
 /api/medicamentos
+```
+**Para acesso em produção**
+```http
+https://modulo2.cyclic.app/api/medicamentos
 ```
 ---
 
@@ -967,9 +1054,13 @@ VAZIO
 - __Autenticação requerida__ :  Bearer {token}
 - __Método___:GET
 
-
+**Para acesso Local**
 ```http
 /api/medicamentos?tipo=NAOCONTROLADO
+```
+**Para acesso em produção**
+```http
+https://modulo2.cyclic.app/api/medicamentos?tipo=NAOCONTROLADO
 ```
 ---
 
@@ -1013,9 +1104,13 @@ VAZIO
 - __Autenticação requerida__ :  Bearer {token}
 - __Método___:DELETE
 
-
+**Para acesso Local**
 ```http
 /api/medicamentos/:medicamentoId
+```
+**Para acesso em produção**
+```http
+https://modulo2.cyclic.app/api/medicamentos/:medicamendoId
 ```
 ---
 
