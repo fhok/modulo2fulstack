@@ -318,6 +318,7 @@ class DepositoController {
         return res.status(401).json({
           code: "NOK",
           error: "Não autorizado",
+          msg: "Não é possível atualizar um depósito de outro usuário",
         });
       }
 
@@ -417,6 +418,7 @@ class DepositoController {
               return res.status(401).json({
                   code: "NOK",
                   error: "Não autorizado",
+                  msg: "Não é possível excluir um depósito de outro usuário",
               });
           }
   
